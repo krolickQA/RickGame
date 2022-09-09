@@ -1,0 +1,134 @@
+.header {
+    display: flex;
+    height: 40px;
+    background-color: black;
+    color: white;
+    font-size: 36px;
+}
+
+.logo img {
+    height: 100%;
+    width: auto;
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.game {
+    width: 800px;
+    height: 400px;
+    background-image: url("./img/altai1.png");
+    border: 1px solid black;
+    margin: 50px auto auto;
+    z-index: 1;
+}
+
+#rick {
+    width: 100px;
+    height: 100px;
+    background-image: url("./img/rick.png");
+    background-size: 100px 100px;
+    position: relative;
+    top: 280px;
+    left: 10px
+}
+
+.jump {
+  transform: translate(10%, -10%);
+    animation: jump 0.3s linear;
+}
+
+@keyframes jump {
+    0% {
+        top: 280px;
+    }
+
+    30% {
+        top: 180px;
+    }
+
+    50% {
+        top: 120px;
+    }
+
+    80% {
+        top: 180px;
+    }
+
+    100% {
+        top: 280px;
+    }
+}
+
+#horse {
+    width: 70px;
+    height: 70px;
+    background-image: url("./img/ball.png");
+    background-size: 70px 70px;
+    position: relative;
+    top: 220px;
+    left: 700px;
+}
+
+.block {
+  animation: block 1s infinite linear;
+}
+
+@keyframes block {
+    0% {
+        left: 700px;
+    }
+
+    100% {
+        left: -40px;
+    }
+
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: auto;
+}
+
+.menu * {
+margin:10px;
+font-size: 32px
+}
+
+#counter{
+  min-height: 28px; 
+  min-width: 80px;
+  border: 1px solid black;
+  border-radius: 2px 2px;
+  text-align: center;
+}
+
+#start {
+  padding: 2px 6px;
+  border: 1px solid black;
+  border-radius: 2px 2px;
+}
+
+#start:active {
+  padding: 2px 6px;
+  border: 1px solid black;
+  border-radius: 2px 2px;
+  background-color:beige
+}
+
+#over {
+  background-image: url(./img/over.png);
+  width: 800px;
+  height: 400px;
+  z-index:9999;
+  position: absolute;
+  margin-top: -170px;
+  border: 3px solid black;
+  visibility:hidden;
+}
