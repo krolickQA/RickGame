@@ -1,8 +1,8 @@
 body {
-  min-width: 800px;
+    min-width: 800px;
 }
 .header {
-    min-width:800px;;
+    min-width: 800px;
     display: flex;
     height: 40px;
     background-color: black;
@@ -33,54 +33,54 @@ body {
 }
 
 #rick {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     background-image: url("./img/rick.png");
-    background-size: 100px 100px;
+    background-size: 150px 150px;
     position: relative;
-    top: 280px;
-    left: 10px
+    top: 250px;
+    left: 10px;
 }
 
 .jump {
-  transform: translate(10%, 10%);
+    transform: translate(10%, 10%);
     animation: jump 0.5s linear;
 }
 
 @keyframes jump {
     0% {
-        top: 280px;
+        top: 250px;
     }
 
     30% {
-        top: 170px;
+        top: 120px;
     }
 
     50% {
-        top: 100px;
+        top: 50px;
     }
 
     80% {
-        top: 170px;
+        top: 120px;
     }
 
     100% {
-        top: 280px;
+        top: 250px;
     }
 }
 
 #horse {
-    width: 70px;
-    height: 70px;
-    background-image: url("./img/beer.png");
-    background-size: 70px 70px;
+    width: 100px;
+    height: 100px;
+    background-image: url("./img/chip.png");
+    background-size: 100px 100px;
     position: relative;
-    top: 220px;
-    left: 700px;
+    top: 150px;
+    left: 690px;
 }
 
 .block {
-  animation: block 1s infinite linear;
+    animation: block 1s infinite linear;
 }
 
 @keyframes block {
@@ -95,46 +95,51 @@ body {
 }
 
 .menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: auto;
-  min-width: 800px
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: auto;
+    min-width: 800px;
 }
 
 .menu * {
-margin:10px;
-font-size: 32px
+    margin: 10px;
+    font-size: 32px;
 }
 
-#counter{
-  min-height: 28px; 
-  min-width: 80px;
-  border: 1px solid black;
-  border-radius: 2px 2px;
-  text-align: center;
+#counter {
+    min-height: 28px;
+    min-width: 80px;
+    border: 1px solid black;
+    border-radius: 2px 2px;
+    text-align: center;
 }
 
-#start {
-  padding: 2px 6px;
-  border: 1px solid black;
-  border-radius: 2px 2px;
+button {
+    padding: 2px 6px;
+    border: 1px solid black;
+    border-radius: 2px 2px;
 }
 
-#start:active {
-  padding: 2px 6px;
-  border: 1px solid black;
-  border-radius: 2px 2px;
-  background-color:beige
+button:active {
+    padding: 2px 6px;
+    border: 1px solid black;
+    border-radius: 2px 2px;
+    background-color: beige;
 }
 
 #over {
-  background-image: url(./img/over.png);
-  width: 800px;
-  height: 400px;
-  z-index:9999;
-  position: absolute;
-  margin-top: -170px;
-  border: 3px solid black;
-  visibility:hidden;
+    background-image: url("./img/over.png");
+    width: 800px;
+    height: 400px;
+    z-index: 9999;
+    position: absolute;
+    margin-top: -250px;
+    border: 3px solid black;
+    visibility: hidden;
+}
+
+#box {
+    border: 1px solid black;
+    border-radius: 3px 3px;
 }
