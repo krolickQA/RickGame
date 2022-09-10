@@ -18,7 +18,7 @@
     align-content: center;
 }
 
-.game {
+#game {
     width: 800px;
     height: 400px;
     background-image: url("./img/altai1.png");

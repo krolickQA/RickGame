@@ -3,6 +3,7 @@ const horse = document.getElementById("horse");
 const start = document.getElementById("start");
 const over = document.getElementById("over");
 const counter = document.getElementById("counter");
+const fieldGame = document.getElementById("game");
 
 function jump() {
   if (rick.classList != "jump") {
@@ -28,6 +29,10 @@ let isAlive = setInterval(() => {
 }, 10);
 
 document.addEventListener("keydown", function (event) {
+  jump();
+});
+
+fieldGame.addEventListener("touchstart", function (event) {
   jump();
 });
 
