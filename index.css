@@ -26,7 +26,7 @@ body {
 #game {
     width: 800px;
     height: 400px;
-    background-image: url("./img/altai1.png");
+    background-image: url("./img/altai.png");
     border: 1px solid black;
     margin: 50px auto auto;
     z-index: 1;
@@ -72,7 +72,7 @@ body {
 #horse {
     width: 70px;
     height: 70px;
-    background-image: url("./img/ball.png");
+    background-image: url("./img/beer.png");
     background-size: 70px 70px;
     position: relative;
     top: 220px;
