@@ -34,7 +34,9 @@ change.addEventListener("click", function (event) {
 });
 
 document.addEventListener("keydown", function (event) {
-  jump();
+  if (event.code === "KeyX") {
+    jump();
+  }
 });
 
 fieldGame.addEventListener("touchstart", function (event) {
